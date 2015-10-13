@@ -31,11 +31,13 @@ sh.on('connection', function (socket) {
 });
 
 app.get("/caps", function (req, res) {
+    console.log("got request to set to CAPS");
     flag = true;
     res.end("Will Set to CAPS");
 });
 
 app.get("/count", function (req, res) {
+    console.log("got request to set to COUNT");
     flag = false;
     res.end("Will Count");
 });
