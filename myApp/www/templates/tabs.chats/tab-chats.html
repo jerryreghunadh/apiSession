@@ -1,0 +1,16 @@
+<ion-view view-title="Chats">
+    <ion-content>
+
+        <div class="list">
+           <ion-radio ng-model="choice" ng-value="'1'" ng-click="requestChanged(choice)">To Caps</ion-radio>
+           <ion-radio ng-model="choice" ng-value="'2'" ng-click="requestChanged(choice)">Count Letters</ion-radio>
+        </div>
+        
+        <div class="card">
+            <div class="item item-text-wrap">
+                {{ resp }}
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

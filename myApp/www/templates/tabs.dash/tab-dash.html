@@ -1,0 +1,27 @@
+<ion-view view-title="Dashboard">
+    <ion-content>
+
+        <div class="list">
+            <a class="item item-icon-left" href="#">
+                <i class="icon ion-beer assertive"></i> Change counter
+                <span class="item-note">{{ counter }}</span>
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="item item-text-wrap">
+                {{ dataFromServer }}
+            </div>
+        </div>
+
+        <div class="list">
+            <label class="item item-input">
+                <input type="text" ng-model="myData.input" placeholder="enter text">
+            </label>
+            <label class="item padding">
+                <button class="button button-positive" ng-click="getDataFromServer(myData)">Submit</button>
+            </label>
+        </div>
+
+    </ion-content>
+</ion-view>
