@@ -86,3 +86,14 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
 
 
 var appCtrl = angular.module('starter.controllers', []);
+
+
+
+
+
+
+
+
+
+
+

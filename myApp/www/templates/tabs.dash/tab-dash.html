@@ -10,13 +10,14 @@
 
         <div class="card">
             <div class="item item-text-wrap">
-                {{ dataFromServer }}
+                {{ d }}
             </div>
         </div>
 
         <div class="list">
             <label class="item item-input">
-                <input type="text" ng-model="myData.input" placeholder="enter text">
+                <input type="text" ng-model="dataFromServer" placeholder="enter text">
+                <input type="text" ng-model="d" placeholder="enter text">
             </label>
             <label class="item padding">
                 <button class="button button-positive" ng-click="getDataFromServer(myData)">Submit</button>
